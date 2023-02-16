@@ -1,5 +1,13 @@
 package hello_golang
 
-func SayHello() string {
-	return "Hello Golang"
+import "fmt"
+
+type HelloGuys struct {
+	Nama string
+	Age  int
+}
+
+func SayHello() {
+	result := HelloGuys{"sakti", 20}
+	fmt.Println(result)
 }
